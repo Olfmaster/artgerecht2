@@ -1,0 +1,29 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@sanity/image-url": "^2.1.1",
+    "@sanity/orderable-document-list": "^1.5.1",
+    "@sanity/vision": "^5.29.0",
+    "gsap": "^3.15.0",
+    "next": "16.2.6",
+    "next-sanity": "^13.0.10",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "sanity": "^5.29.0",
+    "styled-components": "^6.4.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4"
+  }
+}

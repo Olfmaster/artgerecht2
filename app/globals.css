@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --color-rose-gold: #b76e79;
+  --color-rose-gold-soft: #d9a6ab;
+  --color-rose-gold-pale: #f2dcde;
+  --color-rose-gold-deep: #8c4f59;
+
+  /* Version 2 — painterly palette (additive, does not affect V1) */
+  --color-canvas: #f6f1ea;
+  --color-canvas-deep: #ece3d6;
+  --color-ink: #1c1815;
+  --color-ochre: #c98a5e;
+  --color-sage: #7c9082;
+  --color-plum: #8a5a6b;
+}
+
+:root {
+  --accent: #b76e79;
+  --accent-soft: #d9a6ab;
+  --accent-pale: #f2dcde;
+}
+
+body {
+  font-family: var(--font-sans), Arial, sans-serif;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ---- Version 2 (Atelier) painterly helpers — scoped to .v2-root ---- */
+.v2-root {
+  --grain-opacity: 0.5;
+}
+.v2-root ::selection {
+  background-color: var(--color-ochre);
+  color: #fff;
+}
+.v2-blob {
+  filter: blur(48px);
+  will-change: transform;
+}
+/* fine paper grain laid over the canvas background */
+.v2-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+@media (prefers-reduced-motion: reduce) {
+  .v2-blob {
+    filter: blur(56px);
+  }
+}

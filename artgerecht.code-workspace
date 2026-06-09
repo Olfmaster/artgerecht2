@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "name": "artgerecht — website",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.eol": "\n",
+    "files.exclude": {
+      "node_modules": true,
+      ".next": true
+    },
+    "search.exclude": {
+      "node_modules": true,
+      ".next": true,
+      "package-lock.json": true
+    },
+    "tailwindCSS.includeLanguages": {
+      "javascript": "javascript",
+      "javascriptreact": "javascriptreact"
+    },
+    "files.associations": {
+      "*.css": "tailwindcss"
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "bradlc.vscode-tailwindcss",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode"
+    ]
+  }
+}
