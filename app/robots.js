@@ -4,7 +4,7 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.artgerecht.tv/sitemap.xml",
-    host: "https://www.artgerecht.tv",
+    sitemap: "https://art2.vamonos-designs.com/sitemap.xml",
+    host: "https://art2.vamonos-designs.com",
   };
 }

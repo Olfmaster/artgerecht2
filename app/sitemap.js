@@ -1,4 +1,4 @@
-const BASE = "https://www.artgerecht.tv";
+const BASE = "https://art2.vamonos-designs.com";
 
 export default function sitemap() {
   const now = new Date();

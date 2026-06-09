@@ -6,7 +6,7 @@ const geist = Geist({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://www.artgerecht.tv";
+const SITE_URL = "https://art2.vamonos-designs.com";
 const TITLE = "artgerecht — Digitale Illustration & Verpackungsdesign · Birgit Silberg";
 const DESCRIPTION =
   "Birgit Silberg gestaltet digital für Unternehmen: digitale Illustration und Verpackungsdesign — von der ersten Idee bis zum druckfertigen Ergebnis.";
